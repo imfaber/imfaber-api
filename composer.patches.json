@@ -1,0 +1,7 @@
+{
+    "patches":{
+        "asm89/stack-cors": {
+            "(November 29 2017 06:22:06 PM: See issue #223 on contentacms/contenta_jsonapi) Add origin matcher for wildcard matching": "patches/asm89_stack-cors/pull_request_42.patch"
+        }
+    }
+}
