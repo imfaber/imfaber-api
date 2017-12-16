@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: zTIBy5gZbR_42okePpORnIECqjD7BdIca-xSfaAwUeU
 id: user--user
-disabled: false
+disabled: true
 path: users
 resourceType: users
 resourceFields:

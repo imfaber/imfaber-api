@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains imfaber_workplace.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function imfaber_workplace_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the imfaber_api_workplace module.
+    case 'help.page.imfaber_api_workplace':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Define an workplace entity') . '</p>';
+      return $output;
+
+    default:
+  }
+}

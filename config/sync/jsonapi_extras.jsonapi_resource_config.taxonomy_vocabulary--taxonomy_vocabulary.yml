@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: 6523uGd4WcibkTsyMtxLCyVJ1lV_7i_CeFWIj50_jwM
 id: taxonomy_vocabulary--taxonomy_vocabulary
-disabled: false
+disabled: true
 path: vocabularies
 resourceType: vocabularies
 resourceFields:
@@ -56,6 +56,12 @@ resourceFields:
     publicName: default_langcode
     enhancer:
       id: ''
+  revision_translation_affected:
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+    disabled: false
   uuid:
     disabled: true
     fieldName: uuid

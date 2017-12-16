@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: 0LszkiZ3R0Zwaj9QqceFvUAOhwDjjZFNp7wuR6ddQyM
 id: comment_type--comment_type
-disabled: false
+disabled: true
 path: commentTypes
 resourceType: commentTypes
 resourceFields:
@@ -50,6 +50,12 @@ resourceFields:
     publicName: default_langcode
     enhancer:
       id: ''
+  revision_translation_affected:
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+    disabled: false
   uuid:
     disabled: true
     fieldName: uuid

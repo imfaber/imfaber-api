@@ -792,9 +792,9 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
  * Dadabase
  */
 $databases['default']['default'] = [
-  'database'  => 'imfaber_api',
-  'username'  => 'imfaber_api',
-  'password'  => 'imfaber_api',
+  'database'  => 'imfabercms',
+  'username'  => 'imfabercms',
+  'password'  => 'imfabercms',
   'prefix'    => '',
   'host'      => 'mariadb',
   'port'      => '3306',
@@ -807,7 +807,7 @@ $databases['default']['default'] = [
  */
 $settings['redis.connection']['interface'] = 'PhpRedis';
 $settings['redis.connection']['host'] = 'redis';
-$settings['cache_prefix'] = 'imfaber_api_';
+$settings['cache_prefix'] = 'imfaber_cms_';
 $settings['cache']['default'] = 'cache.backend.redis';
 $settings['cache']['bins']['bootstrap'] = 'cache.backend.chainedfast';
 $settings['cache']['bins']['discovery'] = 'cache.backend.chainedfast';
@@ -832,8 +832,8 @@ $settings['file_private_path'] = '/var/drupal_files/private';
 $settings['file_public_path'] = 'sites/default/files';
 
 $settings['trusted_host_patterns'] = [
-  '^imfaber-api\.docker\.localhost$',
-  '^api.imfaber\.me$',
+  '^imfaber-cms\.docker\.localhost$',
+  '^content.imfaber\.me$',
 ];
 
 

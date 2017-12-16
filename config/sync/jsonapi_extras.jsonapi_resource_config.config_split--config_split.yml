@@ -1,22 +1,17 @@
-uuid: 7a47bb0f-b057-47fa-b741-ffc49bc2b525
+uuid: af6f3b99-2b45-4230-bd89-4fa73e49cf57
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - recipes_magazin_contenta
   module:
-    - system
-_core:
-  default_config_hash: O8D1aOdtzVkfe07k1GgRbSQevWK8opD-fBiZ8zQ_a9M
-id: menu--menu
+    - config_split
+id: config_split--config_split
 disabled: true
-path: menus
-resourceType: menus
+path: config_split/config_split
+resourceType: config_split--config_split
 resourceFields:
   id:
     fieldName: id
-    publicName: internalId
+    publicName: id
     enhancer:
       id: ''
     disabled: false
@@ -26,12 +21,18 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
   revision:
-    disabled: true
     fieldName: revision
     publicName: revision
     enhancer:
       id: ''
+    disabled: false
   bundle:
     fieldName: bundle
     publicName: bundle
@@ -39,26 +40,20 @@ resourceFields:
       id: ''
     disabled: false
   langcode:
-    disabled: true
     fieldName: langcode
     publicName: langcode
     enhancer:
       id: ''
+    disabled: false
   default_langcode:
-    disabled: true
     fieldName: default_langcode
     publicName: default_langcode
     enhancer:
       id: ''
+    disabled: false
   revision_translation_affected:
     fieldName: revision_translation_affected
     publicName: revision_translation_affected
     enhancer:
       id: ''
     disabled: false
-  uuid:
-    disabled: true
-    fieldName: uuid
-    publicName: uuid
-    enhancer:
-      id: ''
