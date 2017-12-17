@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "17938548c90074e3a4e215182b44cb42",
+    "content-hash": "0114483d9d2fbdbdb0d4961284ba9fd6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1141,6 +1141,52 @@
                 "source": "https://cgit.drupalcode.org/coffee",
                 "issues": "https://drupal.org/project/issues/coffee",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/color_field",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/color_field",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/color_field-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "220c620acf39237fada74892433e25c323d7ad3b"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1375168268",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "targoo",
+                    "homepage": "https://www.drupal.org/user/431910"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/color_field",
+            "support": {
+                "source": "http://cgit.drupalcode.org/color_field"
             }
         },
         {
@@ -3507,6 +3553,40 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "imfaber/media_entity_responsive_image",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imfaber/media_entity_responsive_image.git",
+                "reference": "239857fa6da2813b77a31b9421e24b0804f7a98f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imfaber/media_entity_responsive_image/zipball/239857fa6da2813b77a31b9421e24b0804f7a98f",
+                "reference": "239857fa6da2813b77a31b9421e24b0804f7a98f",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "~8.1",
+                "drupal/focal_point": "~1.0 || ~8.1.0",
+                "drupal/media_entity": "~1.0 || ~8.1.0"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides an image media bundle configured with a preset of responsive image styles and view modes",
+            "homepage": "https://github.com/imfaber/media_entity_responsive_image",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://github.com/imfaber/media_entity_responsive_image/issues",
+                "source": "https://github.com/imfaber/media_entity_responsive_image.git"
+            },
+            "time": "2017-12-17T11:01:09+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
