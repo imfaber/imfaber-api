@@ -13,6 +13,21 @@
         {
             "type": "vcs",
             "url": "https://github.com/imfaber/media_entity_responsive_image"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "harvesthq/chosen",
+                "version": "1.8.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
         }
     ],
     "require": {
@@ -21,6 +36,7 @@
         "cweagans/composer-patches": "^1.6.0",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.21",
+        "drupal/chosen": "^2.4",
         "drupal/coffee": "^1.0@beta",
         "drupal/color_field": "2.x-dev",
         "drupal/config_ignore": "^2.1",
@@ -33,6 +49,7 @@
         "drupal/redis": "^1.0@RC",
         "drush/drush": "~8.1.12",
         "enyo/dropzone": "^5.1",
+        "harvesthq/chosen": "^1.8",
         "imfaber/media_entity_responsive_image": "^1.0",
         "webflo/drupal-core-strict": "8.4.2"
     },
