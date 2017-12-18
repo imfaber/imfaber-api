@@ -1,0 +1,12 @@
+uuid: 31f20b67-e244-478b-947e-8756330e1ac8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: XMszIDgXueIETmsU76EmS2xck0gKsAZoFyyvZVR5GjM
+id: media.s6_square
+label: 'Size 6 square 1:1'
+targetEntityType: media
+cache: true

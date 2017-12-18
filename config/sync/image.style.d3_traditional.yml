@@ -1,0 +1,19 @@
+uuid: d0bb165a-9279-4031-badc-52fc25e2ccf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: JFViwqrFgUyfUWYPmeloQjkcaM6FGGof_aidjNaL1-I
+name: d3_traditional
+label: 'Display 3 (300xTraditional 4:3)'
+effects:
+  b54380e2-8632-41d0-bdb1-670f8b1b271a:
+    uuid: b54380e2-8632-41d0-bdb1-670f8b1b271a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 225
+      crop_type: focal_point

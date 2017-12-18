@@ -1,0 +1,54 @@
+uuid: c4fbe531-432a-43cf-9f33-d01d9f42aad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.workplace.website
+    - taxonomy.vocabulary.workplace
+  module:
+    - link
+    - path
+    - text
+id: taxonomy_term.workplace.default
+targetEntityType: taxonomy_term
+bundle: workplace
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  website:
+    weight: 31
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden: {  }

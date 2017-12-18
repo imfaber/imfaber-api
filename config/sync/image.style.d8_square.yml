@@ -1,0 +1,19 @@
+uuid: 2d719fcd-7e08-4118-ad28-98ad8c0dabc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 7crZoj_8ONXTK92VZEYhUwuU1iqhIgs2I6xKb1A8tLE
+name: d8_square
+label: 'Display 8 (800xSquare 1:1)'
+effects:
+  a52de7f0-5694-48c1-881a-5cdff84b1683:
+    uuid: a52de7f0-5694-48c1-881a-5cdff84b1683
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 800
+      crop_type: focal_point

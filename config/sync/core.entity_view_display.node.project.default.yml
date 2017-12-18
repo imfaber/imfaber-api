@@ -4,10 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.project.body
-    - field.field.node.project.year
     - node.type.project
   module:
-    - datetime
     - text
     - user
 id: node.project.default
@@ -33,14 +31,6 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  year:
-    weight: 103
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
 hidden:
   langcode: true
+  tags: true

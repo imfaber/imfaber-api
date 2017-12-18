@@ -1,0 +1,22 @@
+uuid: 64c2a374-6533-4353-aed8-d37c1d43475a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.text_color
+    - node.type.work
+  module:
+    - color_field
+id: node.work.text_color
+field_name: text_color
+entity_type: node
+bundle: work
+label: 'Text color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

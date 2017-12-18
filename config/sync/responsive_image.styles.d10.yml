@@ -1,0 +1,31 @@
+uuid: 373d3d5b-0112-4123-a288-911bf5e9801a
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d10
+    - image.style.d8
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: GKwvpIPScUO0Pi36nAZhC6q_ZdsUMlPpcJigRA_BK8I
+id: d10
+label: 'Display 10 responsive auto'
+image_style_mappings:
+  -
+    breakpoint_id: media_entity_responsive_image.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d8
+  -
+    breakpoint_id: media_entity_responsive_image.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d10
+  -
+    breakpoint_id: media_entity_responsive_image.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d10
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d8

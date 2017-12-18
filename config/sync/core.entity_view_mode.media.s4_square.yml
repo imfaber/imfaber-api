@@ -1,0 +1,12 @@
+uuid: c9102d1d-1e6a-425e-8bca-44cad88fa53d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: jfzLqqii5AYpplgJhr0JrWaPSwnzx-6kwLSMny2mwUM
+id: media.s4_square
+label: 'Size 4 square 1:1'
+targetEntityType: media
+cache: true

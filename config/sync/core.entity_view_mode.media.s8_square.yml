@@ -1,0 +1,12 @@
+uuid: ff3626af-f4a8-4db4-afa0-65b7fb98be2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: 9IF8zRn-WFjimi8zwFhwQWTIHn4VvvxbmvnXUFk0HVw
+id: media.s8_square
+label: 'Size 8 square 1:1'
+targetEntityType: media
+cache: true

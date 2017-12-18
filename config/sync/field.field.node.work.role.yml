@@ -1,0 +1,29 @@
+uuid: 3edce972-5f45-401d-bf0d-e328133a7d5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.role
+    - node.type.work
+    - taxonomy.vocabulary.role
+id: node.work.role
+field_name: role
+entity_type: node
+bundle: work
+label: Role
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      role: role
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

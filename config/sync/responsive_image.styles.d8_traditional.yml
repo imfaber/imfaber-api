@@ -1,0 +1,15 @@
+uuid: 3816ed96-eb10-4294-aaf4-fa7906cb103d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d8_traditional
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: 3k5BRFFrE58EPv7sQYyH7ylht5W0toe_x2Jgx-deDwk
+id: d8_traditional
+label: 'Display 8 responsive traditional 4:3'
+image_style_mappings: {  }
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d8_traditional

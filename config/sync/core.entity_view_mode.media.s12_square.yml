@@ -1,0 +1,12 @@
+uuid: 4764b7f2-7e86-403b-b4cf-073f8bd3d2e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: r56-vPn_V-DsRUPXpnWbRhpw-xCN0MTr9WmNSIC8shE
+id: media.s12_square
+label: 'Size 12 square 1:1'
+targetEntityType: media
+cache: true

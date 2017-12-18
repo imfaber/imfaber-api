@@ -1,0 +1,35 @@
+uuid: e3f95bcf-44e9-4643-a502-2f00bed35ea6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.s3_traditional
+    - field.field.media.image.field_image
+    - field.field.media.image.media_tags
+    - media_entity.bundle.image
+    - responsive_image.styles.d3_traditional
+  module:
+    - responsive_image
+_core:
+  default_config_hash: BnFdQSK5utRkJC0Vp7ctH3ux8fqYOVeufQCtCrol5oY
+id: media.image.s3_traditional
+targetEntityType: media
+bundle: image
+mode: s3_traditional
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: d3_traditional
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  media_tags: true
+  name: true
+  thumbnail: true
+  uid: true

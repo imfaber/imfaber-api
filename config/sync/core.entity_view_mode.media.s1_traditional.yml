@@ -1,0 +1,12 @@
+uuid: 39a2f9e5-1a87-4b19-9afe-473368052b5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: PHV_yH07Sxs4zgX57lPI4M1XKD5STjQ_AjDddX-5LXI
+id: media.s1_traditional
+label: 'Size 1 traditional 4:3'
+targetEntityType: media
+cache: true

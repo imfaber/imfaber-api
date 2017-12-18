@@ -1,0 +1,15 @@
+uuid: 389e6885-3bf1-4260-a7d2-b6b832205b5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d8
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: 3VMCNnQ_oGHSgar1bd_0ec2ptSf32r7Vnm4uduLzPkU
+id: d8
+label: 'Display 8 responsive auto'
+image_style_mappings: {  }
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d8

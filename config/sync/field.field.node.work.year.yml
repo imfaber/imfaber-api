@@ -1,21 +1,24 @@
-uuid: a9a576d0-dd60-490e-93b0-06fb6076f3b1
+uuid: abb63058-5126-4fa7-ab8c-ea4951438a00
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.year
-    - node.type.project
+    - node.type.work
   module:
     - datetime
-id: node.project.year
+id: node.work.year
 field_name: year
 entity_type: node
-bundle: project
+bundle: work
 label: Year
 description: ''
-required: true
-translatable: false
-default_value: {  }
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
 default_value_callback: ''
 settings: {  }
 field_type: datetime

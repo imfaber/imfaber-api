@@ -4,10 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.project.body
-    - field.field.node.project.year
     - node.type.project
   module:
-    - datetime
     - path
     - text
 id: node.project.default
@@ -81,10 +79,5 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-  year:
-    weight: 123
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-hidden: {  }
+hidden:
+  tags: true

@@ -1,0 +1,19 @@
+uuid: 1a004f8e-9fd4-4b4a-9eae-184ba78c5eec
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: NRWbET9LMx6w0k96vnQMSfD1QJcojrDEYWK2wbiLy3c
+name: d9_standard
+label: 'Display 9 (900xStandard 16:9)'
+effects:
+  1e599084-91be-43b1-bd47-30f41712453f:
+    uuid: 1e599084-91be-43b1-bd47-30f41712453f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 507
+      crop_type: focal_point

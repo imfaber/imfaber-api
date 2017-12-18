@@ -1,0 +1,12 @@
+uuid: 90b41731-1689-441e-af25-9ad191a7b676
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: Bu1tPDiNbQxugF5A1rgJU_r3fm47za55ooKlJm9Ye2c
+id: media.s7_square
+label: 'Size 7 square 1:1'
+targetEntityType: media
+cache: true

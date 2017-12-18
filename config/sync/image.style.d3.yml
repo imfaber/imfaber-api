@@ -1,0 +1,17 @@
+uuid: 99273c85-a14b-45ae-ae6c-b1fe86b66cf4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8O74JNqENCh627q67yCRmtQ3DjjAJzlQ2reM_ph1-6k
+name: d3
+label: 'Display 3 (300xAuto)'
+effects:
+  1b7720d9-818c-4348-9ba4-41162ba4187f:
+    uuid: 1b7720d9-818c-4348-9ba4-41162ba4187f
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: null
+      upscale: false

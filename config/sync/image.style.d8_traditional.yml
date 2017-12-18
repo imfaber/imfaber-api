@@ -1,0 +1,19 @@
+uuid: 969e1e28-0442-49e0-8ce5-7d00741d09ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 5OHei_JjRlZI5PD6BzWA6-bzzuYrBVc9zrSHgY0M4k8
+name: d8_traditional
+label: 'Display 8 (800xTraditional 4:3)'
+effects:
+  2e2d4f2f-a4cc-4a2f-9dac-e7e43b4ad58f:
+    uuid: 2e2d4f2f-a4cc-4a2f-9dac-e7e43b4ad58f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 600
+      crop_type: focal_point

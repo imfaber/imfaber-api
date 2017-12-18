@@ -1,0 +1,35 @@
+uuid: b810441a-2d42-47d0-a45a-528dd9a22c4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.s6_square
+    - field.field.media.image.field_image
+    - field.field.media.image.media_tags
+    - media_entity.bundle.image
+    - responsive_image.styles.d6_square
+  module:
+    - responsive_image
+_core:
+  default_config_hash: q6aa0Phx8aJPVFurGkJElqMeWQYNvPb_M3m8Bk6sVIM
+id: media.image.s6_square
+targetEntityType: media
+bundle: image
+mode: s6_square
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: d6_square
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  media_tags: true
+  name: true
+  thumbnail: true
+  uid: true

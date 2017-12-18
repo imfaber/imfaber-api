@@ -1,0 +1,19 @@
+uuid: e8dcd74f-bbb4-4a7d-ac6b-9726914bb0c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: ZvNOkS2izsCEOwBNLNpJqATq0PqhaN78oY0QJ0lns2U
+name: d5_square
+label: 'Display 5 (500xSquare 1:1)'
+effects:
+  fe196166-3c7d-465d-90eb-73aee1889e03:
+    uuid: fe196166-3c7d-465d-90eb-73aee1889e03
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 500
+      crop_type: focal_point

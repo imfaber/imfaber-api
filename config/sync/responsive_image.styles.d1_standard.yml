@@ -1,0 +1,26 @@
+uuid: e0a43ad1-edc1-4a40-9f92-8ab2d94b7943
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d1_standard
+    - image.style.d3_standard
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: cgZfgklQaAdhEPO--DbL4qejZ8uOfdPms3af1YIPaAs
+id: d1_standard
+label: 'Display 1 responsive standard 16:9'
+image_style_mappings:
+  -
+    breakpoint_id: media_entity_responsive_image.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d3_standard
+  -
+    breakpoint_id: media_entity_responsive_image.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d1_standard
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d1_standard

@@ -1,0 +1,24 @@
+uuid: 2160430f-a06f-43c7-ad09-f74c1a910b87
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.image
+_core:
+  default_config_hash: IFF8x1x6dJTEPokV-CuTn5-0qWwxONcbb9pn-2526Cw
+id: media.image.status
+field_name: status
+entity_type: media
+bundle: image
+label: 'Publishing status'
+description: 'A boolean indicating whether the media is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

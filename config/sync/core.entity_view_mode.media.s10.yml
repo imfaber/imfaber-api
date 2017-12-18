@@ -1,0 +1,12 @@
+uuid: 6c7b8fe4-e34d-49b1-bedb-d6bcb8dc6eee
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: 85NWZVL_7wwmhQJneFXusW8V5PrEGagwYreJQPgYmlg
+id: media.s10
+label: 'Size 10 auto'
+targetEntityType: media
+cache: true

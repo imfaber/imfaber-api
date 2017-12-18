@@ -1,0 +1,12 @@
+uuid: e1636516-705f-445e-b972-e2be11f2627b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: lkJeEfFPRj7uGDfZnENIst3mYiTPiBUhw1mMrMI74kA
+id: media.s11_square
+label: 'Size 11 square 1:1'
+targetEntityType: media
+cache: true

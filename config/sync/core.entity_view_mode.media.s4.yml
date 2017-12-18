@@ -1,0 +1,12 @@
+uuid: 3e7dbc79-d4a6-4667-bf21-09de7ec5b9d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: KHLO3bJLa_e-uzeSs7bWNamUByAFHMbOptPiSzI8cIs
+id: media.s4
+label: 'Size 4 auto'
+targetEntityType: media
+cache: true

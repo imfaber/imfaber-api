@@ -1,0 +1,15 @@
+uuid: ca48f64b-c93b-4359-92f3-59d7943f1dc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d8_square
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: cGH-iG-kXNdL8q6_xuq7Zka0L5DvPxPfYoFamjqJvyY
+id: d8_square
+label: 'Display 8 responsive square 1:1'
+image_style_mappings: {  }
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d8_square

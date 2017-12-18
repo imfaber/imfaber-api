@@ -1,0 +1,22 @@
+uuid: cee62e52-b8d2-4a00-a138-9cf65341ca53
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.image
+_core:
+  default_config_hash: Hq0ll-jjQQGZFP0qNQ6r1S2tcEa3PNZEuBxjSaxPNJc
+id: media.image.name
+field_name: name
+entity_type: media
+bundle: image
+label: 'Media name'
+description: 'The name of this media.'
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

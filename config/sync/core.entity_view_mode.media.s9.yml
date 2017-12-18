@@ -1,0 +1,12 @@
+uuid: 9359b28f-b9b1-4e94-ab2f-8035acfe30f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: IKA5NA8dic-PMPoN9m3MjOliFJVCMfDL3SnMFkvMBVE
+id: media.s9
+label: 'Size 9 auto'
+targetEntityType: media
+cache: true

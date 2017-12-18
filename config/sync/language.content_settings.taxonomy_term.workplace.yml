@@ -1,11 +1,11 @@
-uuid: 19b169d4-5542-418f-a8ad-c0592f151bcf
+uuid: 992400f8-2f81-4bcf-b1b2-c4d8b3e95bd9
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.project_tags
-id: taxonomy_term.project_tags
+    - taxonomy.vocabulary.workplace
+id: taxonomy_term.workplace
 target_entity_type_id: taxonomy_term
-target_bundle: project_tags
+target_bundle: workplace
 default_langcode: site_default
 language_alterable: false

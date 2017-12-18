@@ -1,0 +1,12 @@
+uuid: 78365a36-2b7c-42bc-89ba-3f9058a16699
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: Ysa19kDSbXXnSsp3TfBvSDddsLdUtD93Y6qwvoJXoxg
+id: media.s2_standard
+label: 'Size 2 standard 16:9'
+targetEntityType: media
+cache: true

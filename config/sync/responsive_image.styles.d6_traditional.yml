@@ -1,0 +1,26 @@
+uuid: 8383274b-ee6a-443b-909b-ea8ceeb814ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d6_traditional
+    - image.style.d8_traditional
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: GZuUaDv5r4CekafwwuzaV565UDRMOYlg57soGeLAovY
+id: d6_traditional
+label: 'Display 6 responsive traditional 4:3'
+image_style_mappings:
+  -
+    breakpoint_id: media_entity_responsive_image.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d8_traditional
+  -
+    breakpoint_id: media_entity_responsive_image.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d6_traditional
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d6_traditional

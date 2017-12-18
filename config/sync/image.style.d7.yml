@@ -1,0 +1,17 @@
+uuid: 5fa2bdd0-6412-4f32-a38c-ed30791d42cd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JRAa__hIlvjNviC840SfBLGqnTz52n0hmgKHAi4gpR0
+name: d7
+label: 'Display 7 (700xAuto)'
+effects:
+  9134983f-ec14-415e-926f-b98523ffb7ba:
+    uuid: 9134983f-ec14-415e-926f-b98523ffb7ba
+    id: image_scale
+    weight: 1
+    data:
+      width: 700
+      height: null
+      upscale: false

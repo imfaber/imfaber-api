@@ -1,0 +1,26 @@
+uuid: f5363211-a598-4c6b-acc1-ce34877b55d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d7
+    - image.style.d8
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: UaIuyDxj0WZPcJyANmvAvq2Eiu6_cA_BmXWchmgJBLc
+id: d7
+label: 'Display 7 responsive auto'
+image_style_mappings:
+  -
+    breakpoint_id: media_entity_responsive_image.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d8
+  -
+    breakpoint_id: media_entity_responsive_image.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d7
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d7

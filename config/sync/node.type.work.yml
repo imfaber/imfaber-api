@@ -1,0 +1,18 @@
+uuid: a3b0967c-6f3f-410c-9a18-b22689f7ba7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Work
+type: work
+description: 'Use Work content type to create portfolio items'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

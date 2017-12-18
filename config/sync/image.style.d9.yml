@@ -1,0 +1,17 @@
+uuid: 372a521d-57a6-481e-a685-a748a6fc3c0b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: fo8wTPA9TVYbUe7imL-5DfxM2gcKlPjyLm8H8a2pnJo
+name: d9
+label: 'Display 9 (900xAuto)'
+effects:
+  26e243a4-d612-42e8-ae52-ced1e0c511af:
+    uuid: 26e243a4-d612-42e8-ae52-ced1e0c511af
+    id: image_scale
+    weight: 1
+    data:
+      width: 900
+      height: null
+      upscale: false

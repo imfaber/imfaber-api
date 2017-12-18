@@ -1,0 +1,19 @@
+uuid: 8225ddf6-b3b2-4b22-b52f-6b6203701e10
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: MkZMap0sHV2MYbOJQWVmGgyp2Tzn-0RQ02_YKPmGDMU
+name: d6_square
+label: 'Display 6 (600xSquare 1:1)'
+effects:
+  f1533d32-4241-48e5-9c54-51573722f121:
+    uuid: f1533d32-4241-48e5-9c54-51573722f121
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      crop_type: focal_point

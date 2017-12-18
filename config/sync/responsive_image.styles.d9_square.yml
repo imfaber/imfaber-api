@@ -1,0 +1,26 @@
+uuid: 82ecadc7-afea-41d6-b70f-21e205e4dd38
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d8_square
+    - image.style.d9_square
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: FMoeYRX9yoAmdx1xwQFNy8HZgCg1XsACwXCgQUBhUZM
+id: d9_square
+label: 'Display 9 responsive square 1:1'
+image_style_mappings:
+  -
+    breakpoint_id: media_entity_responsive_image.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d8_square
+  -
+    breakpoint_id: media_entity_responsive_image.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d9_square
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d8_square

@@ -1,0 +1,26 @@
+uuid: 34c0b0e9-0e92-4bde-a027-ec2cd6c8cbc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d6_square
+    - image.style.d8_square
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: FWlSjxNqlqZOGIN13woOakZc_rBptc9Cso9hl0jA0Qk
+id: d6_square
+label: 'Display 6 responsive square 1:1'
+image_style_mappings:
+  -
+    breakpoint_id: media_entity_responsive_image.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d8_square
+  -
+    breakpoint_id: media_entity_responsive_image.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: d6_square
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d6_square

@@ -1,1 +1,13 @@
-definitions: {  }
+definitions:
+  workplace__admin__structure__settings:
+    weight: 101
+    parent: 'menu_link_content:a0f8ea89-168b-4412-ba47-1dc816f630f6'
+    menu_name: admin
+    enabled: true
+    expanded: false
+  entity__workplace__collection:
+    parent: 'menu_link_content:a0f8ea89-168b-4412-ba47-1dc816f630f6'
+    menu_name: admin
+    weight: 100
+    expanded: false
+    enabled: true

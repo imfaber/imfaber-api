@@ -1,0 +1,15 @@
+uuid: 7393f828-e8c0-4d6c-a8d4-a8c124cf1cbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.d8_standard
+  module:
+    - media_entity_responsive_image
+_core:
+  default_config_hash: cfyuIKDoVr4faVZeeQpRTgKIzSw1vf5YhCS9rmGuV3I
+id: d8_standard
+label: 'Display 8 responsive standard 16:9'
+image_style_mappings: {  }
+breakpoint_group: media_entity_responsive_image
+fallback_image_style: d8_standard

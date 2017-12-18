@@ -1,0 +1,22 @@
+uuid: b517a4a6-d0ee-4696-9cf7-8e911f730337
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.background_color
+    - node.type.work
+  module:
+    - color_field
+id: node.work.background_color
+field_name: background_color
+entity_type: node
+bundle: work
+label: 'Background color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

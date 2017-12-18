@@ -1,0 +1,29 @@
+uuid: 4bfe99d1-1abe-48fe-bdc9-271bbdb39f11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.workplace
+    - node.type.work
+    - taxonomy.vocabulary.workplace
+id: node.work.workplace
+field_name: workplace
+entity_type: node
+bundle: work
+label: Workplace
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      workplace: workplace
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: technology
+field_type: entity_reference

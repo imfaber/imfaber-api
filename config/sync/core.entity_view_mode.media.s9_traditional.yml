@@ -1,0 +1,12 @@
+uuid: 5dba5297-e8e6-4586-82d8-0bdef15e7e10
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+_core:
+  default_config_hash: MikpM795yhx0ccmwHXW4rcGV6WwqIbE6y7GTiMyH8EA
+id: media.s9_traditional
+label: 'Size 9 traditional 4:3'
+targetEntityType: media
+cache: true

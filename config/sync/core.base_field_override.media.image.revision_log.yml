@@ -1,0 +1,20 @@
+uuid: 4fad0aaf-4994-4566-9fa7-14717cc82fe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.image
+_core:
+  default_config_hash: qDjXtyZy0vTp3hV24c8SVWuIW86vbJJSfraILIpaWjQ
+id: media.image.revision_log
+field_name: revision_log
+entity_type: media
+bundle: image
+label: 'Revision Log'
+description: 'The log entry explaining the changes in this revision.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

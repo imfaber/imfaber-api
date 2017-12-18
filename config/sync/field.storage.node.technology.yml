@@ -1,0 +1,20 @@
+uuid: 7c24afd3-5d88-48ce-9ded-b0afe6ffa615
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.technology
+field_name: technology
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
