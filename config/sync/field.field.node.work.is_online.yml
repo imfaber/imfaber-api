@@ -1,0 +1,23 @@
+uuid: 8c1d8405-7d6a-48d3-9457-c61a21cfd2d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.is_online
+    - node.type.work
+id: node.work.is_online
+field_name: is_online
+entity_type: node
+bundle: work
+label: 'Is the project online'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.work.background_color
     - field.field.node.work.body
     - field.field.node.work.image_gallery
+    - field.field.node.work.is_online
     - field.field.node.work.main_image
+    - field.field.node.work.project_link
     - field.field.node.work.role
     - field.field.node.work.tags
     - field.field.node.work.technology
@@ -20,6 +22,7 @@ dependencies:
     - datetime
     - entity_browser
     - field_group
+    - link
     - path
     - text
 third_party_settings:
@@ -28,15 +31,16 @@ third_party_settings:
       children:
         - image_gallery
       parent_name: group_vertical_tabs
-      weight: 25
+      weight: 26
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: 'Media gallery'
         formatter: closed
         description: ''
         required_fields: true
-      label: Media
+        id: ''
+        classes: ''
+      label: 'Media gallery'
     group_summary:
       children:
         - body
@@ -59,7 +63,7 @@ third_party_settings:
         - role
         - tags
       parent_name: group_vertical_tabs
-      weight: 26
+      weight: 27
       format_type: tab
       format_settings:
         id: ''
@@ -72,6 +76,7 @@ third_party_settings:
       children:
         - group_summary
         - group_theme
+        - group_project_link
         - group_media
         - group_meta_data
       parent_name: ''
@@ -96,6 +101,20 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Theme
+    group_project_link:
+      children:
+        - is_online
+        - project_link
+      parent_name: group_vertical_tabs
+      weight: 25
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Project link'
 id: node.work.default
 targetEntityType: node
 bundle: work
@@ -136,6 +155,13 @@ content:
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
+  is_online:
+    weight: 28
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -163,6 +189,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  project_link:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   promote:
     type: boolean_checkbox
     settings:
@@ -171,7 +205,7 @@ content:
     region: content
     third_party_settings: {  }
   role:
-    weight: 16
+    weight: 32
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -191,13 +225,13 @@ content:
     region: content
     third_party_settings: {  }
   tags:
-    weight: 17
+    weight: 33
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   technology:
-    weight: 14
+    weight: 30
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -226,13 +260,13 @@ content:
     region: content
     third_party_settings: {  }
   workplace:
-    weight: 15
+    weight: 31
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   year:
-    weight: 13
+    weight: 29
     settings:
       date_order: DMY
       time_type: none

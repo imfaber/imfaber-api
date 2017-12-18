@@ -6,7 +6,9 @@ dependencies:
     - field.field.node.work.background_color
     - field.field.node.work.body
     - field.field.node.work.image_gallery
+    - field.field.node.work.is_online
     - field.field.node.work.main_image
+    - field.field.node.work.project_link
     - field.field.node.work.role
     - field.field.node.work.tags
     - field.field.node.work.technology
@@ -17,6 +19,7 @@ dependencies:
   module:
     - color_field
     - datetime
+    - link
     - text
     - user
 id: node.work.default
@@ -48,6 +51,16 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  is_online:
+    weight: 113
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   links:
     weight: 100
     region: content
@@ -58,6 +71,18 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  project_link:
+    weight: 111
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   role:
     weight: 103
