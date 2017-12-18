@@ -2,6 +2,9 @@
     "patches":{
         "asm89/stack-cors": {
             "(November 29 2017 06:22:06 PM: See issue #223 on contentacms/contenta_jsonapi) Add origin matcher for wildcard matching": "patches/asm89_stack-cors/pull_request_42.patch"
+        },
+        "drupal/color_field": {
+            "Change title of the Color field from Color to Field Label in HTML5 Color Picker": "https://www.drupal.org/files/issues/color_field-color-label-2711841-2-8.x-2.x.patch"
         }
     }
 }
