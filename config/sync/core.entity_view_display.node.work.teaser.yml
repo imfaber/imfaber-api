@@ -34,4 +34,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
+  background_color: true
+  image_gallery: true
+  is_online: true
   langcode: true
+  main_image: true
+  project_link: true
+  role: true
+  tags: true
+  technology: true
+  text_color: true
+  workplace: true
+  year: true

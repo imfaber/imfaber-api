@@ -1,18 +1,12 @@
-uuid: d6c14b91-178f-4bc9-a3c4-9aa4b31e2570
+uuid: 53bf8af2-7151-4462-ae4c-ca2794b7beca
 langcode: en
 status: true
 dependencies:
   module:
-    - crop
     - media_entity_image
-third_party_settings:
-  crop:
-    image_field: field_image
-_core:
-  default_config_hash: vu6dNLvz3u8Ki2pqynJWhnOKhyy_UeP1gA560fHZvZo
 id: image
 label: Image
-description: 'An Image file is a still visual.'
+description: ''
 type: image
 queue_thumbnail_downloads: false
 new_revision: false
