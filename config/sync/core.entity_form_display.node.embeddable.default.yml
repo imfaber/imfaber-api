@@ -1,26 +1,29 @@
-uuid: 15f7a647-e257-4123-8643-41e9726dbecf
+uuid: a2393925-fe99-4108-a267-6b24fa2870d1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.project.body
-    - node.type.project
+    - field.field.node.embeddable.background_image
+    - field.field.node.embeddable.reference
+    - field.field.node.embeddable.text
+    - node.type.embeddable
   module:
     - path
-    - text
-id: node.project.default
+_core:
+  default_config_hash: ZNz0WUZ4wQozqTCIpBM9JjQB_gnNhvsMzKqGhz-vnxs
+id: node.embeddable.default
 targetEntityType: node
-bundle: project
+bundle: embeddable
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
+  background_image:
+    weight: 32
     settings:
-      rows: 9
-      summary_rows: 3
+      match_operator: CONTAINS
+      size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   created:
     type: datetime_timestamp
@@ -32,8 +35,7 @@ content:
     type: language_select
     weight: 2
     region: content
-    settings:
-      include_locked: true
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -48,6 +50,15 @@ content:
     weight: 15
     region: content
     third_party_settings: {  }
+  reference:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   status:
     type: boolean_checkbox
     settings:
@@ -62,6 +73,14 @@ content:
     weight: 16
     region: content
     third_party_settings: {  }
+  text:
+    weight: 31
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
   title:
     type: string_textfield
     weight: -5
@@ -79,5 +98,4 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden:
-  tags: true
+hidden: {  }

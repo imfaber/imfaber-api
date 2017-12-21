@@ -1,4 +1,4 @@
-uuid: e935d9d1-39fb-4c80-8e3b-87d5acf8316e
+uuid: 144314d0-6c0d-487c-b9e4-8519b895e43f
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: 0LszkiZ3R0Zwaj9QqceFvUAOhwDjjZFNp7wuR6ddQyM
 id: comment_type--comment_type
-disabled: true
+disabled: false
 path: commentTypes
 resourceType: commentTypes
 resourceFields:
@@ -50,12 +50,6 @@ resourceFields:
     publicName: default_langcode
     enhancer:
       id: ''
-  revision_translation_affected:
-    fieldName: revision_translation_affected
-    publicName: revision_translation_affected
-    enhancer:
-      id: ''
-    disabled: false
   uuid:
     disabled: true
     fieldName: uuid

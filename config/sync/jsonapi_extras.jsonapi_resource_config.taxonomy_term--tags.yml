@@ -1,4 +1,4 @@
-uuid: a1cceb1f-f9e0-4fc3-9e03-279bc0eb9fc1
+uuid: e99c5dbf-453d-498b-9649-1ccc676a1a87
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: t8eNCUJKRGqIC1VvK2qEyFu_zuCSdvs1fOvcEMG8iyQ
 id: taxonomy_term--tags
-disabled: true
+disabled: false
 path: tags
 resourceType: tags
 resourceFields:

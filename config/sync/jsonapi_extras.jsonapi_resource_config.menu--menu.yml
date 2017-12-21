@@ -1,4 +1,4 @@
-uuid: 7a47bb0f-b057-47fa-b741-ffc49bc2b525
+uuid: 46a22da7-e2f4-40a3-a0bc-7e69869aeec3
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: O8D1aOdtzVkfe07k1GgRbSQevWK8opD-fBiZ8zQ_a9M
 id: menu--menu
-disabled: true
+disabled: false
 path: menus
 resourceType: menus
 resourceFields:
@@ -50,12 +50,6 @@ resourceFields:
     publicName: default_langcode
     enhancer:
       id: ''
-  revision_translation_affected:
-    fieldName: revision_translation_affected
-    publicName: revision_translation_affected
-    enhancer:
-      id: ''
-    disabled: false
   uuid:
     disabled: true
     fieldName: uuid

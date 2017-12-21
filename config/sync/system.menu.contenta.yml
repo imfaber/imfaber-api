@@ -1,0 +1,11 @@
+uuid: d7575a01-e40a-45ee-9668-bffdab1afa68
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - contenta_enhancements
+id: contenta
+label: Contenta
+description: 'Contenta CMS menu'
+locked: false

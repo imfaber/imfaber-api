@@ -1,4 +1,4 @@
-uuid: 56f646a1-8071-4edc-b358-4c7187c8af90
+uuid: fb43a55f-6bd6-4ea0-b7e5-77625cb0ab42
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: STW_Sd_o09710TX0wZ1y-diGtPUjGUFnWJpS-zyYsG4
 id: taxonomy_term--category
-disabled: true
+disabled: false
 path: categories
 resourceType: categories
 resourceFields:

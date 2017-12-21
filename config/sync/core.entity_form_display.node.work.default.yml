@@ -179,7 +179,7 @@ content:
       open: true
       selection_mode: selection_append
       field_widget_display_settings:
-        view_mode: browser_teaser
+        view_mode: field_preview
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content

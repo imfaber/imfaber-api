@@ -1,4 +1,4 @@
-uuid: 29ff392b-6973-4bc0-abc4-a88c67af6e45
+uuid: 759a726a-e6ea-4c49-a753-e399ff564b13
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: 6523uGd4WcibkTsyMtxLCyVJ1lV_7i_CeFWIj50_jwM
 id: taxonomy_vocabulary--taxonomy_vocabulary
-disabled: true
+disabled: false
 path: vocabularies
 resourceType: vocabularies
 resourceFields:
@@ -56,12 +56,6 @@ resourceFields:
     publicName: default_langcode
     enhancer:
       id: ''
-  revision_translation_affected:
-    fieldName: revision_translation_affected
-    publicName: revision_translation_affected
-    enhancer:
-      id: ''
-    disabled: false
   uuid:
     disabled: true
     fieldName: uuid

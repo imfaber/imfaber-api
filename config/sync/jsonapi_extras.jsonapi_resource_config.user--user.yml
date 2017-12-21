@@ -1,4 +1,4 @@
-uuid: 4539983b-9747-427c-87fd-ee2429c604aa
+uuid: a3497f22-0658-425a-b532-3dd9b1fea8f5
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: zTIBy5gZbR_42okePpORnIECqjD7BdIca-xSfaAwUeU
 id: user--user
-disabled: true
+disabled: false
 path: users
 resourceType: users
 resourceFields:
