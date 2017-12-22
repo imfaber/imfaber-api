@@ -836,5 +836,6 @@ $settings['trusted_host_patterns'] = [
   '^content.imfaber\.me$',
 ];
 
+$settings['install_profile'] = 'contenta_jsonapi';
 
 
