@@ -47,6 +47,7 @@
         "drupal/inline_entity_form": "^1.0@beta",
         "drupal/paragraphs": "^1.2",
         "drupal/redis": "^1.0@RC",
+        "drupal/taxonomy_machine_name": "^1.0@alpha",
         "drush/drush": "~8.1.12",
         "enyo/dropzone": "^5.1",
         "harvesthq/chosen": "^1.8",
