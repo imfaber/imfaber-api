@@ -1,0 +1,9 @@
+uuid: a1175753-de66-420c-957f-b60750b0164a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Code technologies and skills'
+vid: tech_and_skills
+description: ''
+hierarchy: 0
+weight: 0

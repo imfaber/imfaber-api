@@ -1,9 +1,0 @@
-uuid: 7b426ccf-5804-4e10-b1eb-f64f37d81820
-langcode: en
-status: true
-dependencies: {  }
-name: 'Code technologies and skills'
-vid: technology
-description: 'Code technologies and skills I got involved with while working on this project.'
-hierarchy: 0
-weight: 0

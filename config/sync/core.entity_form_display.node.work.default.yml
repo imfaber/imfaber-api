@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.work.main_image
     - field.field.node.work.project_link
     - field.field.node.work.role
-    - field.field.node.work.tags
     - field.field.node.work.technology
     - field.field.node.work.text_color
     - field.field.node.work.workplace
@@ -224,12 +223,6 @@ content:
     weight: 6
     region: content
     third_party_settings: {  }
-  tags:
-    weight: 33
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   technology:
     weight: 30
     settings: {  }

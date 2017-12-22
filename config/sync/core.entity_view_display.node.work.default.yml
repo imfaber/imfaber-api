@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.work.main_image
     - field.field.node.work.project_link
     - field.field.node.work.role
-    - field.field.node.work.tags
     - field.field.node.work.technology
     - field.field.node.work.text_color
     - field.field.node.work.workplace
@@ -86,14 +85,6 @@ content:
     region: content
   role:
     weight: 103
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  tags:
-    weight: 106
     label: above
     settings:
       link: true

@@ -5,12 +5,12 @@ dependencies:
   config:
     - field.storage.node.technology
     - node.type.work
-    - taxonomy.vocabulary.technology
+    - taxonomy.vocabulary.tech_and_skills
 id: node.work.technology
 field_name: technology
 entity_type: node
 bundle: work
-label: Technology
+label: 'Technology and Skills'
 description: ''
 required: false
 translatable: true
@@ -20,10 +20,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      technology: technology
+      tech_and_skills: tech_and_skills
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: tech_and_skills
 field_type: entity_reference

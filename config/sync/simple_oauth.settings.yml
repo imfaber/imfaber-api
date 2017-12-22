@@ -1,4 +1,4 @@
 access_token_expiration: 300
 refresh_token_expiration: 870000
-public_key: ../keys/public.key
-private_key: ../keys/private.key
+public_key: /var/www/keys/public.key
+private_key: /var/www/keys/private.key
