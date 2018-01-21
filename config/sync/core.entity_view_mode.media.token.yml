@@ -1,0 +1,10 @@
+uuid: c7420faf-70a8-4c0d-afcc-a9de168c0e9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.token
+label: Token
+targetEntityType: media
+cache: true

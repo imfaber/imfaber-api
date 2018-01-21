@@ -6,11 +6,15 @@ dependencies:
     - entity_browser.browser.media_entity_browser
     - field.field.node.work.background_color
     - field.field.node.work.body
+    - field.field.node.work.desktop_gallery
     - field.field.node.work.image_gallery
     - field.field.node.work.is_online
     - field.field.node.work.main_image
+    - field.field.node.work.mobile_gallery
     - field.field.node.work.project_link
     - field.field.node.work.role
+    - field.field.node.work.slug
+    - field.field.node.work.tablet_gallery
     - field.field.node.work.technology
     - field.field.node.work.text_color
     - field.field.node.work.workplace
@@ -20,6 +24,7 @@ dependencies:
     - color_field
     - datetime
     - entity_browser
+    - entity_slug
     - field_group
     - link
     - path
@@ -29,6 +34,9 @@ third_party_settings:
     group_media:
       children:
         - image_gallery
+        - desktop_gallery
+        - tablet_gallery
+        - mobile_gallery
       parent_name: group_vertical_tabs
       weight: 26
       format_type: tab
@@ -60,7 +68,6 @@ third_party_settings:
         - technology
         - workplace
         - role
-        - tags
       parent_name: group_vertical_tabs
       weight: 27
       format_type: tab
@@ -136,10 +143,24 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
+  desktop_gallery:
+    weight: 7
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: field_preview
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   image_gallery:
     weight: 6
     settings:
@@ -182,9 +203,23 @@ content:
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
+  mobile_gallery:
+    weight: 9
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: field_preview
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -200,7 +235,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   role:
@@ -209,20 +244,40 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  slug:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: slug_default
+    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
+  tablet_gallery:
+    weight: 8
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: field_preview
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   technology:
     weight: 30
     settings: {  }
@@ -245,7 +300,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60

@@ -17,6 +17,7 @@ module:
   consumers: 0
   contenta_enhancements: 0
   crop: 0
+  ctools: 0
   datetime: 0
   datetime_range: 0
   dropzonejs: 0
@@ -27,6 +28,7 @@ module:
   entity_browser: 0
   entity_browser_entity_form: 0
   entity_reference: 0
+  entity_slug: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -73,12 +75,14 @@ module:
   taxonomy_machine_name: 0
   telephone: 0
   text: 0
+  token: 0
   toolbar: 0
   update: 0
   user: 0
   views: 0
   views_ui: 0
   menu_link_content: 1
+  pathauto: 1
   contenta_jsonapi: 1000
   contenta_graphql: 1001
 theme:

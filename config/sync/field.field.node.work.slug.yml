@@ -1,0 +1,32 @@
+uuid: fb39c3a9-fd1b-4744-b992-e948f633dbfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.slug
+    - node.type.work
+  module:
+    - entity_slug
+id: node.work.slug
+field_name: slug
+entity_type: node
+bundle: work
+label: Slug
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    input: '[node:title]'
+    value: null
+default_value_callback: ''
+settings:
+  slugifier_plugins:
+    token: token
+    pathauto: pathauto
+    entity_alias: 0
+    entity_token: 0
+    term_parent_token: 0
+    short_circuit: 0
+  force_default: 1
+field_type: slug

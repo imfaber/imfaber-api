@@ -1,0 +1,19 @@
+uuid: 18f58c3d-3ff4-4a58-bed9-8e582c62d263
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_slug
+    - node
+id: node.slug
+field_name: slug
+entity_type: node
+type: slug
+settings: {  }
+module: entity_slug
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

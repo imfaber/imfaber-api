@@ -1,0 +1,10 @@
+uuid: 77a5f00d-5253-4df6-85c6-746c4681c52e
+langcode: en
+status: true
+dependencies:
+  module:
+    - simple_oauth
+id: oauth2_token.token
+label: Token
+targetEntityType: oauth2_token
+cache: true
