@@ -5,9 +5,6 @@
         },
         "drupal/color_field": {
             "Change title of the Color field from Color to Field Label in HTML5 Color Picker": "https://www.drupal.org/files/issues/color_field-color-label-2711841-2-8.x-2.x.patch"
-        },
-        "drupal/jsonapi_extras": {
-            "entity_type_id and bundle are missing when reverting config": "https://www.drupal.org/files/issues/jsonapi_extras-set-add-form-params-2922244-23.patch"
         }
     }
 }
