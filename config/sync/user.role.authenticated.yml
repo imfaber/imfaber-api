@@ -10,5 +10,7 @@ permissions:
   - 'access content'
   - 'access jsonapi resource list'
   - 'access openapi api docs'
+  - 'access site-wide contact form'
+  - 'administer contact forms'
   - 'issue subrequests'
   - 'view media'

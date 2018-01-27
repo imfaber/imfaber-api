@@ -1,0 +1,12 @@
+uuid: 4a0d7150-1b01-4cab-884a-cc4e4ef54552
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+recipients:
+  - ilcizzy@gmail.com
+reply: ''
+weight: 0
+message: 'Thanks for getting in touch. I will get back to you as soon as possible.'
+redirect: ''
