@@ -5,6 +5,9 @@
         },
         "drupal/color_field": {
             "Change title of the Color field from Color to Field Label in HTML5 Color Picker": "https://www.drupal.org/files/issues/color_field-color-label-2711841-2-8.x-2.x.patch"
+        },
+        "drupal/prism": {
+            "Drupal 8 port not complete": "https://www.drupal.org/files/issues/prism-fix-formatter-and-filter-2918325-1.patch"
         }
     }
 }

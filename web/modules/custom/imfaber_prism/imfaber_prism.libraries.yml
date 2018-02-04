@@ -1,0 +1,6 @@
+imfaber_prism.widget:
+  version: VERSION
+  js:
+    js/imfaber_prism.widget.js: {}
+
+

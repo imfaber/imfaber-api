@@ -1,0 +1,39 @@
+uuid: b4fe5346-0d3f-4e06-b74e-8323df4acd37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.quote.field_body_plain
+    - field.field.paragraph.quote.field_source
+    - field.field.paragraph.quote.field_title
+    - paragraphs.paragraphs_type.quote
+  module:
+    - imfaber_global
+id: paragraph.quote.default
+targetEntityType: paragraph
+bundle: quote
+mode: default
+content:
+  field_body_plain:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_source:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: imfaber_anchor_link_formatter
+    region: content
+hidden: {  }

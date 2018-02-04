@@ -28,14 +28,61 @@
                     "composer/installers": "^1.2.0"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "enyo/dropzone",
+                "version": "5.1",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/enyo/dropzone",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ajaxorg/ace-builds",
+                "version": "1.2.9",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/ajaxorg/ace-builds/archive/v1.2.9.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "imfaber/prism",
+                "version": "1.0.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/imfaber/prism/archive/1.0.1.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
         }
     ],
     "require": {
+        "ajaxorg/ace-builds": "^1.2",
         "composer/installers": "^1.2",
         "contentacms/contenta_jsonapi": "dev-8.x-1.x",
         "cweagans/composer-patches": "^1.6.0",
         "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/ace_editor": "^1.0",
         "drupal/admin_toolbar": "^1.21",
+        "drupal/advanced_text_formatter": "^1.0@beta",
+        "drupal/allowed_formats": "^1.1",
         "drupal/chosen": "^2.4",
         "drupal/coffee": "^1.0@beta",
         "drupal/color_field": "2.x-dev",
@@ -47,13 +94,17 @@
         "drupal/field_group": "^1.0",
         "drupal/focal_point": "^1.0@beta",
         "drupal/inline_entity_form": "^1.0@beta",
+        "drupal/markdown": "^1.2",
         "drupal/paragraphs": "^1.2",
+        "drupal/prism": "^1.0",
         "drupal/redis": "^1.0@RC",
         "drupal/taxonomy_machine_name": "^1.0@alpha",
+        "drupal/video_embed_media": "^1.5",
         "drush/drush": "~8.1.12",
         "enyo/dropzone": "^5.1",
         "harvesthq/chosen": "^1.8",
         "imfaber/media_entity_responsive_image": "^1.0",
+        "imfaber/prism": "^1.0",
         "webflo/drupal-core-strict": "8.4.2"
     },
     "require-dev": {

@@ -1,0 +1,52 @@
+uuid: 6819f9c7-5b35-4c06-a927-7dbd696295ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_media
+    - field.field.paragraph.video.field_source
+    - field.field.paragraph.video.field_title
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_media:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Video
+      label_plural: Videos
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: ief_video_brower
+    type: inline_entity_form_complex
+    region: content
+  field_source:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

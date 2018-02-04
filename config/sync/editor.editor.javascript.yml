@@ -1,0 +1,22 @@
+uuid: f39be7d3-c9eb-4d5a-b237-2a81a324fba1
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.javascript
+  module:
+    - ace_editor
+format: javascript
+editor: ace_editor
+settings:
+  fieldset:
+    theme: monokai
+    syntax: javascript
+    height: 300px
+    width: 100%
+    font_size: 10pt
+    line_numbers: 1
+    print_margins: 1
+    show_invisibles: 1
+    use_wrap_mode: 1
+image_upload: {  }

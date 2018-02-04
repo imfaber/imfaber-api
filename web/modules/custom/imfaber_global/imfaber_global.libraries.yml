@@ -1,0 +1,5 @@
+imfaber_global.admin:
+  version: 1.x
+  css:
+    theme:
+      css/imfaber-global.admin.css: {}

@@ -1,0 +1,8 @@
+imfaber_global.imfaber_global_controller_homepage:
+  path: '/homepage'
+  defaults:
+    _controller: '\Drupal\imfaber_global\Controller\ImfaberGlobalController::homepage'
+    _title: 'Read, code, write. Repeat'
+  requirements:
+    _permission: 'access content'
+

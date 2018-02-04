@@ -1,26 +1,26 @@
-uuid: 33da499a-cd00-4137-a737-8b9c2490c29b
+uuid: 390102e6-65d2-4a7d-aa6c-ddbc97ae281a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_recipes
+    - field.storage.node.main_image
+    - media_entity.bundle.image
     - node.type.article
-_core:
-  default_config_hash: Q-XxosEHs9occrMXCzymAJOalLtedw8e0uXKFGee8zI
-id: node.article.field_recipes
-field_name: field_recipes
+id: node.article.main_image
+field_name: main_image
 entity_type: node
 bundle: article
-label: Recipes
+label: 'Main image'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:media'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      image: image
     sort:
       field: _none
     auto_create: false

@@ -1,0 +1,34 @@
+uuid: fb246ef4-b4d9-40dd-a928-fec0cf3bcfb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_media
+    - field.field.paragraph.video.field_source
+    - field.field.paragraph.video.field_title
+    - paragraphs.paragraphs_type.video
+  module:
+    - imfaber_global
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_media:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: large
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: imfaber_anchor_link_formatter
+    region: content
+hidden:
+  field_source: true

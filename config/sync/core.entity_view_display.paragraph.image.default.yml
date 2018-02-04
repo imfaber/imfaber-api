@@ -1,0 +1,41 @@
+uuid: ef3074eb-e5c6-44f4-bf38-727430e1dd54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image.field_media
+    - field.field.paragraph.image.field_source
+    - field.field.paragraph.image.field_title
+    - paragraphs.paragraphs_type.image
+  module:
+    - imfaber_global
+id: paragraph.image.default
+targetEntityType: paragraph
+bundle: image
+mode: default
+content:
+  field_media:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: se2e
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_source:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: imfaber_anchor_link_formatter
+    region: content
+hidden: {  }

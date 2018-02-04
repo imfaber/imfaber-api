@@ -1,15 +1,13 @@
-uuid: 6e4bc8ca-7d0a-4e41-b326-8bd6b3181876
+uuid: cacda27a-99c4-4f65-a49e-3f8b469bdf08
 langcode: en
 status: true
 dependencies:
   module:
     - media_entity
-    - node
-_core:
-  default_config_hash: ISEOAhz9ijKGoB3eDbhwFFSajMKyNbRizhgGCLvcfWE
-id: node.field_image
-field_name: field_image
-entity_type: node
+    - paragraphs
+id: paragraph.field_media
+field_name: field_media
+entity_type: paragraph
 type: entity_reference
 settings:
   target_type: media

@@ -1,0 +1,7 @@
+name: Imfaber Prism
+type: module
+description: Provides custom functionalities for Prism
+core: 8.x
+package: Imfaber
+dependencies:
+  - prism

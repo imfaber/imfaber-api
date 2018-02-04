@@ -1,0 +1,5 @@
+name: Imfaber global
+type: module
+description: Helper and utilities with global scope
+core: 8.x
+package: Imfaber

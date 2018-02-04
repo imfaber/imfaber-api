@@ -1,0 +1,11 @@
+.vertical-tabs {
+    overflow: visible !important;
+}
+
+.vertical-tabs__menu {
+    width: 150px !important;
+}
+
+.vertical-tabs__panes {
+    margin: 0 0 0 150px !important;
+}

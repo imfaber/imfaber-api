@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Contains imfaber_global.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function imfaber_global_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the imfaber_global module.
+    case 'help.page.imfaber_global':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Helper and utilities with global scope') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function imfaber_global_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'imfaber_global/imfaber_global.admin';
+}
+

@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains imfaber_prism.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function imfaber_prism_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the imfaber_prism module.
+    case 'help.page.imfaber_prism':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides custom functionalities for Prism') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function imfaber_prism_field_widget_form_alter(
+  &$element,
+  \Drupal\Core\Form\FormStateInterface $form_state,
+  $context
+) {
+  /** @var \Drupal\Core\Field\WidgetInterface $widget */
+  $widget = $context['widget'];
+  if ($widget->getPluginId() == 'text_prism') {
+
+    $element['value']['#type'] = 'text_format';
+    $element['value']['#allowed_formats'] = [
+      'code'       => 'code',
+      'markup'     => 'markup',
+      'css'        => 'css',
+      'javascript' => 'javascript',
+      'php'        => 'php',
+    ];
+
+  }
+}
