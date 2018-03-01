@@ -88,3 +88,6 @@ Thumbs.db
 
 # Node modules
 node_modules
+
+certificates
+keys
