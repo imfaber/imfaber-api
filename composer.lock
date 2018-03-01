@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "47818b3e07200705ec84a6990e0414c2",
+    "content-hash": "396aac0c75b06c6a9f2b4b9c6064cd05",
     "packages": [
         {
             "name": "ajaxorg/ace-builds",
@@ -3617,6 +3617,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Drupal 8 port not complete": "https://www.drupal.org/files/issues/prism-fix-formatter-and-filter-2918325-1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10013,6 +10016,7 @@
         "drupal/advanced_text_formatter": 10,
         "drupal/coffee": 10,
         "drupal/color_field": 20,
+        "drupal/consumer_image_styles": 5,
         "drupal/contact_storage": 10,
         "drupal/entity_slug": 15,
         "drupal/focal_point": 10,
