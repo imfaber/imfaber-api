@@ -30,3 +30,18 @@ function imfaber_global_page_attachments(array &$page) {
   $page['#attached']['library'][] = 'imfaber_global/imfaber_global.admin';
 }
 
+/**
+ * Implements hook_form_alter().
+ */
+function imfaber_global_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (!empty($form['slug'])) {
+    $form['slug_group'] = [
+      '#type' => 'details',
+      '#title' => t('URL slug'),
+      '#group' => 'advanced',
+      '#weight' => 999,
+      '#optional' => false,
+    ];
+    $form['slug']['#group'] = 'slug_group';
+  }
+}

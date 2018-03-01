@@ -9,3 +9,24 @@
 .vertical-tabs__panes {
     margin: 0 0 0 150px !important;
 }
+
+.vertical-tabs__panes *{
+    max-width: 100%;
+}
+
+.vertical-tabs__panes *{
+    max-width: 100%;
+}
+
+.vertical-tabs__panes input.form-autocomplete,
+.vertical-tabs__panes input.form-text,
+.vertical-tabs__panes input.form-tel,
+.vertical-tabs__panes input.form-email,
+.vertical-tabs__panes input.form-url,
+.vertical-tabs__panes input.form-search,
+.vertical-tabs__panes input.form-number,
+.vertical-tabs__panes input.form-color,
+.vertical-tabs__panes input.form-file,
+.vertical-tabs__panes textarea.form-textarea {
+    width: 95%;
+}

@@ -18,8 +18,6 @@
           var lang             = $(this).val() || 'none',
               textarea_new_val = '';
 
-          console.log(lang);
-
           textarea_val = $textarea.val().replace(/\[\/?prism:((\w+)|((?:\w+-)+\w+))\]/igm, '');
           textarea_new_val += '[prism:' + lang + ']\r' + textarea_val + '[/prism:' + lang + ']';
           $textarea.val(textarea_new_val);
