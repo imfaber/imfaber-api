@@ -1,0 +1,16 @@
+uuid: 629c2828-9b90-45bb-94bc-7fb1605913d3
+langcode: en
+status: true
+dependencies: {  }
+id: api_consumer
+label: 'API consumer'
+weight: 6
+is_admin: null
+permissions:
+  - 'access jsonapi resource list'
+  - 'access site-wide contact form'
+  - 'access user contact forms'
+  - 'administer contact forms'
+  - 'administer paragraphs types'
+  - 'issue subrequests'
+  - 'view media'

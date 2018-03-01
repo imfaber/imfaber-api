@@ -44,6 +44,24 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
+  revision_timestamp:
+    disabled: true
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+  revision_uid:
+    disabled: true
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+  revision_log:
+    disabled: true
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
   status:
     fieldName: status
     publicName: isPublished
@@ -90,22 +108,10 @@ resourceFields:
     publicName: sticky
     enhancer:
       id: ''
-  revision_timestamp:
+  default_langcode:
     disabled: true
-    fieldName: revision_timestamp
-    publicName: revision_timestamp
-    enhancer:
-      id: ''
-  revision_uid:
-    disabled: true
-    fieldName: revision_uid
-    publicName: revision_uid
-    enhancer:
-      id: ''
-  revision_log:
-    disabled: true
-    fieldName: revision_log
-    publicName: revision_log
+    fieldName: default_langcode
+    publicName: default_langcode
     enhancer:
       id: ''
   revision_translation_affected:
@@ -114,15 +120,15 @@ resourceFields:
     publicName: revision_translation_affected
     enhancer:
       id: ''
-  default_langcode:
-    disabled: true
-    fieldName: default_langcode
-    publicName: default_langcode
-    enhancer:
-      id: ''
   path:
     fieldName: path
     publicName: path
+    enhancer:
+      id: ''
+    disabled: false
+  menu_link:
+    fieldName: menu_link
+    publicName: menu_link
     enhancer:
       id: ''
     disabled: false
@@ -134,26 +140,44 @@ resourceFields:
       settings:
         path: value
     disabled: false
-  comment:
-    fieldName: comment
-    publicName: comment
+  category:
+    fieldName: category
+    publicName: category
     enhancer:
       id: ''
     disabled: false
-  field_image:
-    fieldName: field_image
+  date:
+    fieldName: date
+    publicName: date
+    enhancer:
+      id: ''
+    disabled: false
+  main_image:
+    fieldName: main_image
     publicName: image
     enhancer:
       id: ''
     disabled: false
-  field_recipes:
-    fieldName: field_recipes
-    publicName: recipes
+  paragraphs:
+    fieldName: paragraphs
+    publicName: paragraphs
     enhancer:
       id: ''
     disabled: false
-  field_tags:
-    fieldName: field_tags
+  primary_links:
+    fieldName: primary_links
+    publicName: primary_links
+    enhancer:
+      id: ''
+    disabled: false
+  slug:
+    fieldName: slug
+    publicName: slug
+    enhancer:
+      id: ''
+    disabled: false
+  tags:
+    fieldName: tags
     publicName: tags
     enhancer:
       id: ''

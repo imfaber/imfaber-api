@@ -1,0 +1,23 @@
+uuid: 840b0431-20e4-4658-8fa5-9090aa852867
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.primary_links
+    - node.type.article
+  module:
+    - link
+id: node.article.primary_links
+field_name: primary_links
+entity_type: node
+bundle: article
+label: 'Primary links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -5,14 +5,20 @@ dependencies:
   config:
     - entity_browser.browser.media_entity_browser
     - field.field.node.article.body
+    - field.field.node.article.category
+    - field.field.node.article.date
     - field.field.node.article.main_image
     - field.field.node.article.paragraphs
+    - field.field.node.article.primary_links
     - field.field.node.article.slug
+    - field.field.node.article.tags
     - node.type.article
   module:
+    - datetime
     - entity_browser
     - entity_slug
     - field_group
+    - link
     - paragraphs
     - path
     - text
@@ -32,7 +38,11 @@ third_party_settings:
         direction: vertical
       label: 'Vertical tabs'
     group_meta_data:
-      children: {  }
+      children:
+        - date
+        - primary_links
+        - category
+        - tags
       parent_name: group_vertical_tabs
       weight: 3
       format_type: tab
@@ -86,12 +96,24 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  category:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   created:
     type: datetime_timestamp
     weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
+  date:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   langcode:
     type: language_select
     weight: 5
@@ -131,6 +153,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  primary_links:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   promote:
     type: boolean_checkbox
     settings:
@@ -158,6 +188,12 @@ content:
     weight: 9
     region: content
     third_party_settings: {  }
+  tags:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   title:
     type: string_textfield
     weight: 0

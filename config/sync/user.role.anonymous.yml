@@ -8,10 +8,10 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
+  - 'access files overview'
   - 'access jsonapi resource list'
   - 'access openapi api docs'
   - 'access site-wide contact form'
   - 'administer contact forms'
   - 'execute graphql requests'
-  - 'issue subrequests'
   - 'view media'
