@@ -6,15 +6,15 @@ dependencies:
     - entity_browser.browser.media_entity_browser
     - field.field.node.article.body
     - field.field.node.article.category
-    - field.field.node.article.date
+    - field.field.node.article.demo
     - field.field.node.article.main_image
     - field.field.node.article.paragraphs
-    - field.field.node.article.primary_links
+    - field.field.node.article.project
     - field.field.node.article.slug
+    - field.field.node.article.source_code
     - field.field.node.article.tags
     - node.type.article
   module:
-    - datetime
     - entity_browser
     - entity_slug
     - field_group
@@ -39,10 +39,11 @@ third_party_settings:
       label: 'Vertical tabs'
     group_meta_data:
       children:
-        - date
-        - primary_links
         - category
         - tags
+        - demo
+        - project
+        - source_code
       parent_name: group_vertical_tabs
       weight: 3
       format_type: tab
@@ -97,7 +98,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   category:
-    weight: 29
+    weight: 34
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -108,11 +109,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  date:
-    weight: 27
-    settings: {  }
+  demo:
+    weight: 36
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
-    type: datetime_default
+    type: link_default
     region: content
   langcode:
     type: language_select
@@ -153,8 +156,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  primary_links:
-    weight: 28
+  project:
+    weight: 37
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -174,6 +177,14 @@ content:
     third_party_settings: {  }
     type: slug_default
     region: content
+  source_code:
+    weight: 38
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   status:
     type: boolean_checkbox
     settings:
@@ -189,10 +200,13 @@ content:
     region: content
     third_party_settings: {  }
   tags:
-    weight: 30
-    settings: {  }
+    weight: 35
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   title:
     type: string_textfield

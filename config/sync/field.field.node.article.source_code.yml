@@ -1,17 +1,17 @@
-uuid: 840b0431-20e4-4658-8fa5-9090aa852867
+uuid: 6a3c1dfa-ef25-47cb-b93c-daf684bc914b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.primary_links
+    - field.storage.node.source_code
     - node.type.article
   module:
     - link
-id: node.article.primary_links
-field_name: primary_links
+id: node.article.source_code
+field_name: source_code
 entity_type: node
 bundle: article
-label: 'Primary links'
+label: 'Source code'
 description: ''
 required: false
 translatable: false
@@ -19,5 +19,5 @@ default_value: {  }
 default_value_callback: ''
 settings:
   link_type: 17
-  title: 2
+  title: 1
 field_type: link

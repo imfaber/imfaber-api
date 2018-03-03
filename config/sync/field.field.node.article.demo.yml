@@ -1,0 +1,23 @@
+uuid: cbfc1dba-bb07-4ff4-b48d-a3c0622d5476
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.demo
+    - node.type.article
+  module:
+    - link
+id: node.article.demo
+field_name: demo
+entity_type: node
+bundle: article
+label: Demo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

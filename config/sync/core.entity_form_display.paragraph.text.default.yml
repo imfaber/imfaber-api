@@ -3,16 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.text.cta_link
     - field.field.paragraph.text.field_body
     - field.field.paragraph.text.field_title
     - paragraphs.paragraphs_type.text
   module:
+    - link
     - text
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text
 mode: default
 content:
+  cta_link:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_body:
     weight: 7
     settings:

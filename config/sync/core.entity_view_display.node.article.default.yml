@@ -5,15 +5,15 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.category
-    - field.field.node.article.date
+    - field.field.node.article.demo
     - field.field.node.article.main_image
     - field.field.node.article.paragraphs
-    - field.field.node.article.primary_links
+    - field.field.node.article.project
     - field.field.node.article.slug
+    - field.field.node.article.source_code
     - field.field.node.article.tags
     - node.type.article
   module:
-    - datetime
     - entity_reference_revisions
     - entity_slug
     - link
@@ -41,14 +41,17 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  date:
-    weight: 105
+  demo:
+    weight: 108
     label: above
     settings:
-      format_type: medium
-      timezone_override: ''
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: datetime_default
+    type: link
     region: content
   links:
     weight: 100
@@ -70,8 +73,8 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  primary_links:
-    weight: 104
+  project:
+    weight: 110
     label: above
     settings:
       trim_length: 80
@@ -88,6 +91,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: slug_default
+    region: content
+  source_code:
+    weight: 109
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   tags:
     weight: 106

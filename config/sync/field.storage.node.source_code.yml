@@ -1,18 +1,18 @@
-uuid: 59b7f27a-566c-447c-b1b3-8db69e6a3f88
+uuid: 765b7ed8-860a-49fb-9737-d28a6e029c68
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - node
-id: node.primary_links
-field_name: primary_links
+id: node.source_code
+field_name: source_code
 entity_type: node
 type: link
 settings: {  }
 module: link
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

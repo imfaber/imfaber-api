@@ -1,17 +1,16 @@
-uuid: ef542b5c-3ea5-40af-9658-bdb765daf378
+uuid: 9a6e5ef7-64db-4079-bf0a-f75adb725a4b
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
+    - link
     - node
-id: node.date
-field_name: date
+id: node.project
+field_name: project
 entity_type: node
-type: datetime
-settings:
-  datetime_type: date
-module: datetime
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true
