@@ -10,11 +10,11 @@
     margin: 0 0 0 150px !important;
 }
 
-.vertical-tabs__panes *{
+.vertical-tabs__panes *:not(.field--name-field-code *){
     max-width: 100%;
 }
 
-.vertical-tabs__panes *{
+.vertical-tabs__panes *:not(.field--name-field-code *){
     max-width: 100%;
 }
 
@@ -27,6 +27,6 @@
 .vertical-tabs__panes input.form-number,
 .vertical-tabs__panes input.form-color,
 .vertical-tabs__panes input.form-file,
-.vertical-tabs__panes textarea.form-textarea {
+.vertical-tabs__panes textarea.form-textarea:not(.ace_text-input) {
     width: 95%;
 }
