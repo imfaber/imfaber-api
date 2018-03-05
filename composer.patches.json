@@ -8,6 +8,13 @@
         },
         "drupal/prism": {
             "Drupal 8 port not complete": "https://www.drupal.org/files/issues/prism-fix-formatter-and-filter-2918325-1.patch"
+        },
+        "drupal/fieldable_path": {
+            "Undefined function pathauto_entity_update()": "https://www.drupal.org/files/issues/2949926-2-replace-pathauto-entity-update.diff"
+        },
+        "drupal/consumer_image_styles": {
+            "Doesn't work with JSON API 8.x-1.10": "https://www.drupal.org/files/issues/consumer_image_styles_update-normalizer_2948293-3.patch"
         }
     }
+
 }
