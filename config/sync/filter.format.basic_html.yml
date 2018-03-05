@@ -40,22 +40,6 @@ filters:
     status: false
     weight: -39
     settings: {  }
-  ace_filter:
-    id: ace_filter
-    provider: ace_editor
-    status: false
-    weight: -45
-    settings:
-      theme: cobalt
-      syntax: html
-      height: 500px
-      width: 700px
-      font_size: 10pt
-      line_numbers: '1'
-      show_invisibles: '0'
-      print_margins: '1'
-      auto_complete: '1'
-      use_wrap_mode: '1'
   filter_autop:
     id: filter_autop
     provider: filter
@@ -100,3 +84,19 @@ filters:
     status: false
     weight: -44
     settings: {  }
+  ace_filter:
+    id: ace_filter
+    provider: ace_editor
+    status: false
+    weight: -45
+    settings:
+      theme: cobalt
+      syntax: html
+      height: 500px
+      width: 700px
+      font_size: 10pt
+      line_numbers: '1'
+      show_invisibles: '0'
+      print_margins: '1'
+      auto_complete: '1'
+      use_wrap_mode: '1'

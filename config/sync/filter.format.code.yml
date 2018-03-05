@@ -10,22 +10,6 @@ name: 'Generic code'
 format: code
 weight: -6
 filters:
-  ace_filter:
-    id: ace_filter
-    provider: ace_editor
-    status: false
-    weight: -48
-    settings:
-      theme: cobalt
-      syntax: html
-      height: 500px
-      width: 700px
-      font_size: 10pt
-      line_numbers: '1'
-      show_invisibles: '0'
-      print_margins: '1'
-      auto_complete: '1'
-      use_wrap_mode: '1'
   editor_file_reference:
     id: editor_file_reference
     provider: editor
@@ -90,3 +74,19 @@ filters:
     status: true
     weight: -39
     settings: {  }
+  ace_filter:
+    id: ace_filter
+    provider: ace_editor
+    status: false
+    weight: -48
+    settings:
+      theme: cobalt
+      syntax: html
+      height: 500px
+      width: 700px
+      font_size: 10pt
+      line_numbers: '1'
+      show_invisibles: '0'
+      print_margins: '1'
+      auto_complete: '1'
+      use_wrap_mode: '1'
