@@ -106,7 +106,7 @@ function material_admin_preprocess_node_add_list(&$variables) {
  */
 function material_admin_preprocess_system_modules_details(&$variables) {
   foreach ($variables['modules'] as &$module) {
-    $module['checkbox']['#theme'] = 'input__switch';
+    $module['checkbox']['#theme'] = 'input__switch__install';
     $module['checkbox']['#attributes']['class'][] = 'item-switch';
   }
 }
@@ -211,4 +211,23 @@ function material_admin_preprocess_block(&$variables) {
  */
 function material_admin_preprocess_textarea(&$variables) {
   $variables['attributes']['cols'] = '100';
+}
+
+/**
+ * Implements hook_preprocess_select() for textarea content.
+ *
+ * Set variable for theme_settings select_default compatability
+ */
+function material_admin_preprocess_select(&$variables) {
+  $variables['select_default'] = theme_get_setting('material_admin_select_default');
+}
+
+/**
+ * Implements hook_preprocess_form_element() for textarea content.
+ *
+ * Set variable for theme_settings select_default compatability
+ */
+
+function material_admin_preprocess_form_element(&$variables) {
+  $variables['select_default'] = theme_get_setting('material_admin_select_default');
 }

@@ -23,6 +23,7 @@ stylesheets-remove:
   - '@classy/css/components/dialog.css' #scss/base/overrides/_dialog.scss
   - '@classy/css/components/file.css' #scss/base/overrides/_file.scss
   - '@classy/css/components/item-list.css'
+  - '@classy/css/components/messages.css'
   - '@classy/css/components/tablesort.css'
   - '@classy/css/components/tabledrag.css'
   - '@classy/css/components/tableselect.css'
@@ -59,8 +60,8 @@ regions:
 regions_hidden:
   - sidebar_first
 
-# Information added by Drupal.org packaging script on 2018-01-19
-version: '8.x-1.0-alpha5'
+# Information added by Drupal.org packaging script on 2018-03-10
+version: '8.x-1.0-alpha6'
 core: '8.x'
 project: 'material_admin'
-datestamp: 1516375112
+datestamp: 1520698992

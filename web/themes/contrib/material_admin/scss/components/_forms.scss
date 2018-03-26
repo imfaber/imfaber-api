@@ -3,19 +3,6 @@
  *
  */
 
-@media #{$medium-and-up} {
-  // styles for medium screens and larger
-  .form--inline {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    .input-field {
-      flex: 0 1 20%;
-      margin: 10px !important;
-    }
-  }
-}
-
 .file-upload-btn.btn-floating {
   height: inherit;
   line-height: inherit;
@@ -58,11 +45,6 @@ textarea.materialize-textarea {
   }
 }
 
-.form--inline .input-field {
-  display: block;
-  width: 100%;
-}
-
 .form-radios {
   margin: 25px 0;
   .form-item.form-type-radio {
@@ -90,6 +72,25 @@ textarea.materialize-textarea {
   }
   .input.select-dropdown {
     max-width: inherit;
+  }
+}
+
+// if browser default for <select> elements, set defaults
+.form-item.input-field-browser-default {
+  margin: 25px 0 !important;
+  max-width: 450px;
+  >select.browser-default {
+    padding: 0;
+    font-size: inherit;
+  }
+  input {
+    margin: 0;
+    height: auto;
+
+    box-sizing: border-box;
+  }
+  .description {
+    padding-top: 5px;
   }
 }
 
@@ -176,6 +177,9 @@ input[type='checkbox'][type='checkbox']:checked+label::before {
 
     color: $error-text;
   }
+  .button.use-ajax {
+    @extend .btn;
+  }
 }
 
 input.btn {
@@ -190,10 +194,11 @@ abbr.warning {
   color: $warning-text;
 }
 
-.switch label {
-  white-space: nowrap;
+.switch {
+  label {
+    white-space: nowrap;
+  }
 }
-
 
 //switch labels are overridden, so it tries to add it in via JS, this prevents 2 labels.
 .switch label:not(.switch-label) {
@@ -205,6 +210,11 @@ abbr.warning {
   vertical-align: middle;
 
   clip: inherit;
+}
+
+.switch input[type='checkbox'][disabled]+.lever {
+  background: color($utility, 'darken-2');
+  cursor: not-allowed;
 }
 
 // align multiple checkboxes with label
@@ -286,6 +296,7 @@ details.form-wrapper {
     }
   }
   .details-wrapper {
+    background: $white;
     padding: 1rem 2rem; //prevent nested wrappers from providing too much z-depth
     details.form-wrapper {
       border: 1px solid color($utility, 'lighten-2') !important;
@@ -325,9 +336,10 @@ details.form-wrapper {
   min-width: 175px;
 }
 
-.container-inline .form-item {
-  display: inline;
+.container-inline .form-item:not(.form-type-select) {
+  display: inline-block;
   padding-right: 10px;
+  min-width: 200px;
 }
 
 .container-inline label:empty::after,
@@ -521,6 +533,7 @@ i.waves-input-wrapper {
   }
   .entity-meta__header {
     margin-bottom: 1em;
+    background: $white;
   }
   .form-actions {
     margin-top: 1em;
@@ -590,12 +603,38 @@ fieldset.fieldgroup.form-wrapper {
   width: auto;
 }
 
-.has-description-after {
+.has-description-after:not(.input-field-browser-default) {
   input {
     margin-bottom: 10px !important;
   }
   div.description {
     margin-bottom: 30px;
+  }
+}
+
+.form--inline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: baseline;
+  >div:not(.form--inline) {
+    flex: 1 auto;
+    flex-basis: auto;
+    min-width: 200px;
+    max-width: 450px;
+    &.form-item-separator {
+      flex: 0;
+      padding: 0 30px;
+      min-width: auto;
+      font-weight: 700;
+    }
+    .select-wrapper {
+      max-width: 100%; // if inside flex grid, dont set a max width - its set on the parent.
+    }
+  }
+  div.form--inline {
+    flex-wrap: no-wrap;
   }
 }
 
@@ -617,6 +656,7 @@ fieldset.fieldgroup.form-wrapper {
     justify-content: flex-start;
     margin-bottom: 1rem;
     border: 0;
+    background: $body-background;
     padding: 0;
     vertical-align: middle;
     a {
@@ -632,9 +672,24 @@ fieldset.fieldgroup.form-wrapper {
     padding: 45px 10px 10px;
     font-weight: inherit; //account for labels being absolute positioned with padding-top
     .form--inline {
-      justify-content: flex-end;
       .form-actions {
         padding-top: 15px;
+      }
+    }
+    @media #{$medium-and-up} {
+      // styles for medium screens and larger
+      .form--inline {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        div {
+          flex: 1;
+          margin: 0 10px !important;
+          width: 100%;
+          min-width: 15em;
+        }
       }
     }
   }
