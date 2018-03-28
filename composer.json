@@ -97,6 +97,7 @@
         "drupal/focal_point": "^1.0@beta",
         "drupal/inline_entity_form": "^1.0@beta",
         "drupal/jsonapi": "1.13",
+        "drupal/linkit": "^4.3",
         "drupal/markdown": "^1.2",
         "drupal/paragraphs": "^1.2",
         "drupal/prism": "^1.0",
