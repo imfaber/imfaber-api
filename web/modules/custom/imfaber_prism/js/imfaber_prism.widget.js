@@ -15,7 +15,7 @@
             textarea_val = $textarea.val();
 
         $select.on('change', function (e) {
-          var lang             = $(this).val() || 'none',
+          var lang             = $(this).val() || 'None',
               textarea_new_val = '';
 
           textarea_val = $textarea.val().replace(/\[\/?prism:((\w+)|((?:\w+-)+\w+))\]/igm, '');
@@ -25,10 +25,13 @@
           });
         });
 
-        // If textarea is empty init prism.
-        if (!textarea_val) {
-          $select.trigger('change');
+        // Set selected languange in the prism select.
+        if ($textarea.val()) {
+          $select
+            .val($textarea.val().match(/\[prism:(.*?)\]/)[1])
+            .trigger("chosen:updated");
         }
+
       });
 
     }
