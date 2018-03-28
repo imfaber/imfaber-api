@@ -1,0 +1,19 @@
+uuid: 8a83e72b-84d3-4391-944d-9c0ac1a4f1d0
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: Default
+description: ''
+attributes:
+  target:
+    id: target
+    weight: -9
+    settings:
+      widget_type: simple_checkbox
+  title:
+    id: title
+    weight: -10
+    settings:
+      automatic_title: false
+matchers: {  }

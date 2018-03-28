@@ -20,18 +20,24 @@ settings:
         -
           name: Links
           items:
-            - DrupalLink
+            - Linkit
             - DrupalUnlink
         -
           name: Lists
           items:
             - BulletedList
             - NumberedList
+        -
+          name: Misc
+          items:
+            - Source
   plugins:
     stylescombo:
       styles: ''
     language:
       language_list: un
+    linkit:
+      linkit_profile: default
 image_upload:
   status: false
   scheme: public

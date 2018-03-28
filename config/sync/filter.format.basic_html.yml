@@ -19,7 +19,7 @@ filters:
     status: true
     weight: -49
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <p> <br>'
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <p> <br> <a href hreflang !href accesskey id rel target title>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
