@@ -4,18 +4,39 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.text.cta_link
     - field.field.paragraph.text.field_body
     - field.field.paragraph.text.field_title
     - paragraphs.paragraphs_type.text
   module:
     - advanced_text_formatter
+    - field_group
+third_party_settings:
+  field_group:
+    group_p_heading:
+      children:
+        - field_title
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'Paragraph heading'
+        element: h3
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+      label: 'Paragraph heading'
 id: paragraph.text.preview
 targetEntityType: paragraph
 bundle: text
 mode: preview
 content:
   field_body:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       trim_length: '200'
@@ -45,10 +66,12 @@ content:
     type: advanced_text
     region: content
   field_title:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     region: content
-hidden: {  }
+    type: string
+hidden:
+  cta_link: true
