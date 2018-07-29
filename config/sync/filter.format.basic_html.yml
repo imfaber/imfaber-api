@@ -19,7 +19,7 @@ filters:
     status: true
     weight: -49
     settings:
-      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <p> <br> <a href hreflang !href accesskey id rel target title>'
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <p> <br> <a href hreflang !href accesskey id rel target title> <img src alt data-entity-type data-entity-uuid>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
@@ -96,7 +96,6 @@ filters:
       width: 700px
       font_size: 10pt
       line_numbers: '1'
-      show_invisibles: '0'
       print_margins: '1'
-      auto_complete: '1'
+      show_invisibles: '0'
       use_wrap_mode: '1'

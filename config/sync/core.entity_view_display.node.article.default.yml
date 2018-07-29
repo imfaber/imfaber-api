@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.article.project
     - field.field.node.article.slug
     - field.field.node.article.source_code
+    - field.field.node.article.table_of_contents
     - field.field.node.article.tags
     - node.type.article
   module:
@@ -103,6 +104,16 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  table_of_contents:
+    weight: 111
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   tags:
     weight: 106

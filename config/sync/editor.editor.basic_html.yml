@@ -28,6 +28,10 @@ settings:
             - BulletedList
             - NumberedList
         -
+          name: Media
+          items:
+            - DrupalImage
+        -
           name: Misc
           items:
             - Source

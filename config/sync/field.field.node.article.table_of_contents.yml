@@ -1,0 +1,23 @@
+uuid: 518530bf-1190-4666-8566-4eea83e0b5ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.table_of_contents
+    - node.type.article
+id: node.article.table_of_contents
+field_name: table_of_contents
+entity_type: node
+bundle: article
+label: 'Show table of contents'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

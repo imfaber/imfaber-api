@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.article.project
     - field.field.node.article.slug
     - field.field.node.article.source_code
+    - field.field.node.article.table_of_contents
     - field.field.node.article.tags
     - node.type.article
   module:
@@ -71,6 +72,7 @@ third_party_settings:
     group_content:
       children:
         - paragraphs
+        - table_of_contents
       parent_name: group_vertical_tabs
       weight: 2
       format_type: tab
@@ -178,7 +180,7 @@ content:
     type: slug_default
     region: content
   source_code:
-    weight: 38
+    weight: 39
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -199,6 +201,13 @@ content:
     weight: 9
     region: content
     third_party_settings: {  }
+  table_of_contents:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   tags:
     weight: 35
     settings:
